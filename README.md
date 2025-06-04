@@ -1,4 +1,4 @@
-\# Diabrowser Campus Icon Scraper
+# Diabrowser Campus Icon Scraper
 
 This project scrapes all school icons from https://www.diabrowser.com/campuses and exports each SVG as a centered, properly scaled 512×512 PNG using Puppeteer. All icons are included in this repository.
 
