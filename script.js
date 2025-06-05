@@ -7,7 +7,7 @@
  *       • visit https://www.diabrowser.com/{slug}
  *       • wait until at least one SVG is in the DOM
  *       • pick the largest SVG (width ≥ 100 px) → save svgs/{slug}.svg
- * 3.  RENDER every saved SVG → pngs/{slug}.png   (512×512, 85 % occupancy)
+ * 3.  RENDER every saved SVG → pngs/{slug}.png   (1024×1024, 90 % occupancy)
  *
  *  node script.js
  */
@@ -21,8 +21,8 @@ const SVG_OUT = path.join(ROOT, 'svgs');
 const PNG_OUT = path.join(ROOT, 'pngs');
 const START  = 'https://www.diabrowser.com/campuses';
 
-const VIEWPORT   = 512;
-const OCCUPANCY  = 0.85;        // 85 % of 512 ⇒ ~435 px
+const VIEWPORT   = 1024;
+const OCCUPANCY  = 0.90;        // 90 % of 1024 ⇒ ~922 px
 
 // ── helpers ────────────────────────────────────────────────────────────
 function ensure(dir) { if (!fs.existsSync(dir)) fs.mkdirSync(dir); }
